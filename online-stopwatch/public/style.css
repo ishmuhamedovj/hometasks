@@ -56,24 +56,11 @@ p {
     color: #fff;
 }
 
-.assets {
-    display: flex;
-}
-
-.box {
-    display: flex;
-}
-
-.box-2 {
-    display: flex;
-}
-
 .timer-container-intervals {
     margin: 30px 0;
     background: linear-gradient(359deg, rgb(150, 192, 255) -17.7%, rgb(255, 180, 161) 101.5%);
     color: #1870ed;
-    height: 200px;
-    max-width: 200px;
+    height: 100px;
     overflow-y: auto;
     border-radius: 5px;
     padding: 15px 0px;
@@ -88,6 +75,34 @@ p {
     background-color: yellow;
     border-radius: 8px;
 }
+
+@media (max-width: 768px) {
+    .timer-container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .timer-col {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .timer-container--next {
+        flex-direction: column;
+    }
+
+    .timer-btn {
+        margin-bottom: 10px;
+    }
+
+    .timer-container-intervals {
+        height: auto;
+        max-width: none;
+    }
+}
+
 
 @media (max-width: 825px) {
     .timer-container {

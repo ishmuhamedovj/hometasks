@@ -71,7 +71,6 @@ class App extends React.Component {
 
         return (
             <div>
-                <div className="box"></div>
                 <div className="timer-container">
                     <h1 className="name-watch">
                         <span>Online Stopwatch </span>
@@ -106,7 +105,7 @@ class App extends React.Component {
                         <button onClick={this.clearClick} className="btn btn-warning">Clear</button>
                     </div>
                 </div>
-                <div className="timer-container-intervals">
+                <div className="timer-container-intervals text-center">
                     {intervalStorage.map((item, index) => <p>{index + 1}.=&gt; {item}</p>)}
                 </div>
             </div>
